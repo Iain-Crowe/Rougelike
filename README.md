@@ -15,7 +15,7 @@ First, create and activate a Python virtual environment:
 
 ```bash
 python3 -m venv env
-source env/bin/activate  # On Windows, use `.\env\Scriptsctivate`
+source env/bin/activate  # On Windows, use `.\env\Scripts\activate`
 ```
 
 ## Install Dependencies
@@ -54,7 +54,7 @@ sudo pacman -S sdl2 sdl2_image sdl2_mixer sdl2_ttf
 To start the game, run the following command:
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 Make sure you are in the virtual environment and the dependencies are installed.
