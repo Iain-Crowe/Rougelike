@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 import copy
+import math
 from typing import Optional, Tuple, Type, TypeVar, TYPE_CHECKING, Union
 
-from util.render_order import RenderOrder
+from util.render.render_order import RenderOrder
 
 if TYPE_CHECKING:
     from components.ai import BaseAI
@@ -70,6 +71,12 @@ class Entity:
                     self.game_map.entities.remove(self)
             self.parent = game_map
             game_map.entities.add(self)
+
+    def distance(self, x: int, y: int) -> float:
+        """
+            Return the distance between self and given (x, y) coordinate
+        """
+        return math.sqrt((x - self.x) ** 2 + (y - self.y) ** 2)
 
     def move(self, dx: int, dy: int) -> None:
         # Move the entity by a given amount

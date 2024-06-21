@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-import util.color as color
+import util.render.color as color
 
 if TYPE_CHECKING:
     from tcod import console

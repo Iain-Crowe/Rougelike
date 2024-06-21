@@ -4,7 +4,7 @@ import traceback
 
 import tcod
 
-import util.color as color
+import util.render.color as color
 from util.engine import Engine
 import entity.entity_factories as entity_factories
 from map.procgen import generate_dungeon

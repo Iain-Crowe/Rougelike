@@ -8,7 +8,7 @@ from tcod.map import compute_fov
 import util.exceptions as exceptions
 from util.input_handlers import MainGameEventHandler
 from util.message_log import MessageLog
-from util.render_functions import render_bar, render_names_at_mouse_location
+from util.render.render_functions import render_bar, render_names_at_mouse_location
 
 if TYPE_CHECKING:
     from entity.entity import Actor

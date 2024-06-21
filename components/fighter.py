@@ -2,10 +2,10 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-import util.color as color
+import util.render.color as color
 from components.base_component import BaseComponent
 from util.input_handlers import GameOverEventHandler
-from util.render_order import RenderOrder
+from util.render.render_order import RenderOrder
 
 if TYPE_CHECKING:
     from entity.entity import Actor

@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Optional, Tuple, TYPE_CHECKING
 
 from entity.entity import Actor
-import util.color as color
+import util.render.color as color
 import util.exceptions as exceptions
 
 if TYPE_CHECKING:
