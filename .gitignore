@@ -1,5 +1,5 @@
 # Saved game files
-.sav
+*.sav
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
